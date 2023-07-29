@@ -4,11 +4,13 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import {
-  TwitterIcon,
+  XIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
+import { siteConfig } from '@/constants/config'
+
 import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
@@ -53,7 +55,8 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Sarim Mehmood and I am a product management professional based in Pakistan. 
+              I’m Sarim Mehmood and I am a product management professional based
+              in Pakistan.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
@@ -82,39 +85,36 @@ export default function About() {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink
-                href="https://twitter.com/sarimmehmood"
-                icon={TwitterIcon}
-              >
-                Follow on Twitter
+              <SocialLink href={siteConfig.socialLinks.x} icon={XIcon}>
+                Follow on X
               </SocialLink>
               <SocialLink
-                href="https://instagram.com/sarimmehmood"
+                href={siteConfig.socialLinks.instagram}
                 icon={InstagramIcon}
                 className="mt-4"
               >
                 Follow on Instagram
               </SocialLink>
               <SocialLink
-                href="https://github.com/sarimmehmood"
+                href={siteConfig.socialLinks.github}
                 icon={GitHubIcon}
                 className="mt-4"
               >
                 Follow on GitHub
               </SocialLink>
               <SocialLink
-                href="https://www.linkedin.com/in/sarimmehmood1"
+                href={siteConfig.socialLinks.linkedIn}
                 icon={LinkedInIcon}
                 className="mt-4"
               >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:sarimmehmood1@gmail.com"
+                href={`mailto:${siteConfig.email}`}
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                sarimmehmood1@gmail.com
+                {siteConfig.email}
               </SocialLink>
             </ul>
           </div>
@@ -127,7 +127,6 @@ export default function About() {
 About.layoutProps = {
   meta: {
     title: 'About',
-    description:
-      'I’m Sarim Mehmood. I live in Lahore, Pakistan, where I help building software to change to world for the better, at scale.',
+    description: siteConfig.description,
   },
 }

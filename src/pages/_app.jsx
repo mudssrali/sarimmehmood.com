@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 import { Title } from '@/components/Title'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { siteConfig } from '@/constants/config'
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
@@ -25,13 +26,11 @@ export default function App({ Component, pageProps, router }) {
 
   const meta = Component.layoutProps?.meta || {}
   const description =
-    meta.metaDescription ||
-    meta.description ||
-    'I’m Sarim, a product manager based in Lahore, Pakistan.'
+    meta.metaDescription || meta.description || siteConfig.descriptionShort
 
   return (
     <>
-      <Title suffix={router.pathname === '/' ? '' : 'Sarim Mehmood'}>
+      <Title suffix={router.pathname === '/' ? '' : siteConfig.name}>
         {meta.metaTitle || meta.title}
       </Title>
       <Head>
@@ -40,7 +39,11 @@ export default function App({ Component, pageProps, router }) {
           name="twitter:card"
           content="summary_large_image"
         />
-        <meta key="twitter:site" name="twitter:site" content="@sarimmehmood" />
+        <meta
+          key="twitter:site"
+          name="twitter:site"
+          content={`@${siteConfig.socialLinks.x}`}
+        />
         <meta
           key="twitter:description"
           name="twitter:description"
@@ -54,7 +57,7 @@ export default function App({ Component, pageProps, router }) {
         <meta
           key="twitter:creator"
           name="twitter:creator"
-          content="@sarimmehmood"
+          content={`@${siteConfig.socialLinks.x}`}
         />
         <meta
           key="og:url"

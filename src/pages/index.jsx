@@ -8,14 +8,12 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  TwitterIcon,
+  XIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-
-import logoLabs from '@/images/logos/labs.png'
-import logoI2cInc from '@/images/logos/i2c.svg'
+import { siteConfig } from '@/constants/config'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -163,26 +161,6 @@ function Newsletter() {
 }
 
 function Resume() {
-  let resume = [
-    {
-      company: 'CERP Labs',
-      title: 'Product Manager',
-      logo: logoLabs,
-      start: '2021',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
-    },
-    {
-      company: 'i2c Inc.',
-      title: 'Global Product Management',
-      logo: logoI2cInc,
-      start: '2019',
-      end: '2021',
-    },
-  ]
-
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -190,7 +168,7 @@ function Resume() {
         <span className="ml-3">Work</span>
       </h2>
       <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
+        {siteConfig.resume.experience.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
@@ -224,7 +202,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="https://sarimmehmood.notion.site/sarimmehmood/Hello-f470b1fc487b4a4088b472cae74817bd"
+        href={siteConfig.resume.link}
         variant="secondary"
         className="group mt-6 w-full"
       >
@@ -254,37 +232,35 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Product Manager
+            {siteConfig.designation}
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            My name is Sarim Mehmood and I am a product management professional
-            based in Pakistan.
+            {siteConfig.description}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com/sarimmehmood"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
+              href={siteConfig.socialLinks.x}
+              aria-label="Follow on X"
+              icon={XIcon}
             />
             <SocialLink
-              href="https://instagram.com/sarimmehmood"
+              href={siteConfig.socialLinks.instagram}
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com/sarimmehmood"
+              href={siteConfig.socialLinks.github}
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com/in/sarimmehmood1"
+              href={siteConfig.socialLinks.linkedIn}
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
           </div>
         </div>
       </Container>
-      {/* <Photos /> */}
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
@@ -304,9 +280,8 @@ export default function Home({ articles }) {
 
 Home.layoutProps = {
   meta: {
-    title: 'Sarim Mehmood - Product Manager',
-    description:
-      'My name is Sarim Mehmood and I am a product management professional based in Pakistan.',
+    title: `${siteConfig.name} - ${siteConfig.description}`,
+    description: siteConfig.description,
   },
 }
 

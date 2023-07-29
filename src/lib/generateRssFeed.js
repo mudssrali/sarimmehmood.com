@@ -2,14 +2,15 @@ import ReactDOMServer from 'react-dom/server'
 import { Feed } from 'feed'
 import { mkdir, writeFile } from 'fs/promises'
 
+import { siteConfig } from '@/constants/config'
 import { getAllArticles } from './getAllArticles'
 
 export async function generateRssFeed() {
   let articles = await getAllArticles()
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
-    name: 'Sarim Mehmood',
-    email: 'sarimmehmood1@gmail.com',
+    name: siteConfig.name,
+    email: siteConfig.email,
   }
 
   let feed = new Feed({
