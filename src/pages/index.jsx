@@ -280,7 +280,7 @@ export default function Home({ articles }) {
 
 Home.layoutProps = {
   meta: {
-    title: `${siteConfig.name} - ${siteConfig.description}`,
+    title: `${siteConfig.name} - ${siteConfig.designation}`,
     description: siteConfig.description,
   },
 }

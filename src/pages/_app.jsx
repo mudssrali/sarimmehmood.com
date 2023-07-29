@@ -39,11 +39,7 @@ export default function App({ Component, pageProps, router }) {
           name="twitter:card"
           content="summary_large_image"
         />
-        <meta
-          key="twitter:site"
-          name="twitter:site"
-          content={`@${siteConfig.socialLinks.x}`}
-        />
+        <meta key="twitter:site" name="twitter:site" content="@sarimmehmood" />
         <meta
           key="twitter:description"
           name="twitter:description"
@@ -57,7 +53,7 @@ export default function App({ Component, pageProps, router }) {
         <meta
           key="twitter:creator"
           name="twitter:creator"
-          content={`@${siteConfig.socialLinks.x}`}
+          content="@sarimmehmood"
         />
         <meta
           key="og:url"

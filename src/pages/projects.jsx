@@ -2,34 +2,7 @@ import Image from 'next/future/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoPxD from '@/images/logos/pxd.svg'
-import logoIlmx from '@/images/logos/ilmx.png'
-import logoMISchool from '@/images/logos/mischool.ico'
-
-const projects = [
-
-  {
-    name: 'PxD: Weather Advisory Tool',
-    description:
-      'Weather advisory tool to provide millions of farmers with weather based advisory to improve agricultural outcomes, currently creating an impact on more than 800,000 farmers within Punjab, Pakistan.',
-    link: { href: 'https://precisiondev.org', label: 'precisiondev.org' },
-    logo: logoPxD,
-  },
-  {
-    name: 'MISchool',
-    description:
-      'School Management software application is designed  to transform operations and management processes and targets low-cost private, primary and secondary government schools in Pakistan.',
-    link: { href: 'https://mischool.pk', label: 'mischool.pk' },
-    logo: logoMISchool,
-  },
-  {
-    name: 'IlmExchange',
-    description:
-      'Ilm Exchange is a digital education platform that connects schools, teachers and students with affordable resources to enable quality teaching and learning across Pakistan.',
-    link: { href: '#', label: 'ilmexchange.com' },
-    logo: logoIlmx,
-  }
-]
+import { siteConfig } from '@/constants/config'
 
 function LinkIcon(props) {
   return (
@@ -53,7 +26,7 @@ export default function Projects() {
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {projects.map((project) => (
+          {siteConfig.projects.map((project) => (
             <Card as="li" key={project.name}>
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
