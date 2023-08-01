@@ -44,28 +44,27 @@ export const siteConfig = {
 
         {
             name: 'PxD: Weather Advisory Tool',
+            description:
 
-            In partnership with the Climate Forecast Applications Network, a customized mobile- based weather advisory and forecast system was developed which is accessible to 5 million farmers of Punjab.Farmers in 36 districts receive regular advisory about upcoming weather patterns and farming advice such as seeding periods, pest management, and floodwater diversion.Microsoft’s Text to Speech conversion services are used to generate audio messages which are then broadcasted through Telenor APIs to individual farmers.Comprehensive metrics are used to generate engagement trends and to increase outreach efficacy. 
-
-            * Current Daily Impact *: 880, 172 farmers, 20 treatment arms, and 40 campaigns
-            
+                'In partnership with the Climate Forecast Applications Network, a customized mobile-based weather advisory and forecast system was developed which is accessible to 5 million farmers of Punjab.Farmers in 36 districts receive regular advisory about upcoming weather patterns and farming advice such as seeding periods, pest management, and floodwater diversion.Microsoft’s Text to Speech conversion services are used to generate audio messages which are then broadcasted through Telenor APIs to individual farmers. Comprehensive metrics are used to generate engagement trends and to increase outreach efficacy.',
 
             link: { href: 'https://precisiondev.org', label: 'precisiondev.org' },
-        logo: logoPxD,
+
+            logo: logoPxD,
         },
-    {
-        name: 'MISchool',
-        description:
+        {
+            name: 'MISchool',
+            description:
                 'School Management software application is designed  to transform operations and management processes and targets low-cost private, primary and secondary government schools in Pakistan.',
-        link: { href: 'https://mischool.pk', label: 'mischool.pk' },
-        logo: logoMISchool,
-    },
-    {
-        name: 'IlmExchange',
-        description:
+            link: { href: 'https://mischool.pk', label: 'mischool.pk' },
+            logo: logoMISchool,
+        },
+        {
+            name: 'IlmExchange',
+            description:
                 'Ilm Exchange is a digital education platform that connects schools, teachers and students with affordable resources to enable quality teaching and learning across Pakistan.',
-        link: { href: '#', label: 'ilmexchange.com' },
-        logo: logoIlmx,
-    }
+            link: { href: '#', label: 'ilmexchange.com' },
+            logo: logoIlmx,
+        }
     ]
 }
