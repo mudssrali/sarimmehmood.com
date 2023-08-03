@@ -9,7 +9,7 @@ export const siteConfig = {
     name: "Sarim Mehmood",
     nameShort: "Sarim",
     designation: "Product Manager",
-    description: "My name is Sarim Mehmood and I am a product management professional based in Pakistan.",
+    description: "My name is Sarim Mehmood & I am a product management professional based in Pakistan.",
     descriptionShort: "I’m Sarim, a product manager based in Lahore, Pakistan.",
     email: "sarimmehmood1@gmail.com",
     socialLinks: {
