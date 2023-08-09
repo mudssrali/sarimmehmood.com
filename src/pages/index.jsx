@@ -185,9 +185,8 @@ function Resume() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
+                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
+                  }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
@@ -238,16 +237,7 @@ export default function Home({ articles }) {
             {siteConfig.description}
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href={siteConfig.socialLinks.x}
-              aria-label="Follow on X"
-              icon={XIcon}
-            />
-            <SocialLink
-              href={siteConfig.socialLinks.instagram}
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
+
             <SocialLink
               href={siteConfig.socialLinks.github}
               aria-label="Follow on GitHub"
@@ -261,7 +251,7 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-      <Container className="mt-24 md:mt-28">
+      <Container className="mt-24 md:mt-14">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (

@@ -60,41 +60,13 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program in GW-Basic when I was 14 years old, back
-                in 2012 on Intel&apos;s Pentium 4 — At the start, a kid who
-                wasn’t aware where he would go next, but Floppy Disks, CDs and
-                Computer games in the neighbour’s home, served as a stepping
-                stone.
-              </p>
-              <p>
-                Currently, I’m working at <em>CERP Labs</em> as a software
-                development manager, working on projects in Edtech, Agtech,
-                Healthcare and Data Visualization. I’m passionate about software
-                engineering and building great products that make people’s lives
-                easier for the better, at scale. I have over 4 years of
-                experience strategizing, architecting and building innovative
-                digital solutions for the startups and companies.
-              </p>
-              <p>
-                My current areas of interest are AI, distributed real-time
-                systems, infrastructure, open-source and (some) frontier tech.
+                I'm passionate about building products that make a difference in people's lives. I believe that technology can be used to solve real problems and make the world a better place. At CERP, I'm part of a team of talented development professionals who are working on some of the most pressing economic issues impacting Education, Agriculture and Public Health. We're constantly challenging ourselves to come up with new ideas and to find new ways to improve our apprach to serve the local population.
               </p>
               <p></p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href={siteConfig.socialLinks.x} icon={XIcon}>
-                Follow on X
-              </SocialLink>
-              <SocialLink
-                href={siteConfig.socialLinks.instagram}
-                icon={InstagramIcon}
-                className="mt-4"
-              >
-                Follow on Instagram
-              </SocialLink>
               <SocialLink
                 href={siteConfig.socialLinks.github}
                 icon={GitHubIcon}
