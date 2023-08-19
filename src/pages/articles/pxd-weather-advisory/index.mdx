@@ -1,7 +1,8 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
 
-import PxDLogo from './pxd.png'
+import logoPxD from './pxd-logo.png'
+import socialCard from './pxd.png'
 
 export const meta = {
   author: 'Sarim Mehmood',
@@ -9,7 +10,8 @@ export const meta = {
   title: 'PxD - Weather Advisory',
   description:
     'A web-based weather advisory and forecast system to provide custom advisories about weather patterns and farming advice. The platform was capable of launching text campaigns and generating automated calls in multiple local languages using Text to Speech conversion services.',
-  pinned: true
+  socialCard: socialCard,
+  pinned: true,
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
@@ -24,18 +26,18 @@ The vision of the pilot was to help farmers overcome the challenges of the pande
 
 We evaluated the pain points in rapid information broadcasts of weather forecasts and crop related advice to the farmers. These included evaluation of television campaigns and state-run weather advisories as well as private initiatives operating in this space. We identified several gaps in the process including, but not limited to: outdated data profiles of farmers, lack of transmission capabilities, lack of accessibility considerations for low-tech, uneducated farmers, lack of awareness about ongoing broadcast campaigns, and most of all lack of advisories tailored according to real-time weather forecasts, geographical boundaries, or crop types.
 
-We outlined a simple, interactive web-based platform which could broadcast data-driven, tailored advisories to farmers through mediums which do not require express history with digital services. The proposed mediums were selected to be text messages (SMS) and voice calls. We designed an interactive mockup and started discussions with stakeholders and end users to understand the acceptability and to further refine the concept. The concept won over well and we initiated feature refinement. 
+We outlined a simple, interactive web-based platform which could broadcast data-driven, tailored advisories to farmers through mediums which do not require express history with digital services. The proposed mediums were selected to be text messages (SMS) and voice calls. We designed an interactive mockup and started discussions with stakeholders and end users to understand the acceptability and to further refine the concept. The concept won over well and we initiated feature refinement.
 
-Keeping in view the larger vision of the pilot, we initiated three parallel activities. One was the procurement of services and means which would allow us to reach out to farmers in the farthest corners of the Punjab province. The second was the building of an interactive prototype to convert written features and services into a visual package which could be shared with high level stakeholders. The third was the initiation of architecture building and backend establishment of the platform. 
+Keeping in view the larger vision of the pilot, we initiated three parallel activities. One was the procurement of services and means which would allow us to reach out to farmers in the farthest corners of the Punjab province. The second was the building of an interactive prototype to convert written features and services into a visual package which could be shared with high level stakeholders. The third was the initiation of architecture building and backend establishment of the platform.
 
-The prototyping process involved an iterative approach where suggestions were first accumulated from all involved stakeholders including farmer community. These ideas were then ideated upon and translated into features.  
+The prototyping process involved an iterative approach where suggestions were first accumulated from all involved stakeholders including farmer community. These ideas were then ideated upon and translated into features.
 
 For broadcasts through SMS and audio calls, we reached out to Telenor, a major telecommunication network in Pakistan, for their broadcast API suite. Since we were working at a provincial level, we had to sit with the Telenor development team and make improvements to their APIs to support the scale we intended to operate at. We also got into touch with Microsoft’s Azure team for demonstrations of their Text to Speech services which would convert our broadcast messages into local languages including Urdu and Punjabi. With both these services in place, we went to work in integrating these into the platform.
 
 ## Metrics
 
 - 1.35 million Punjab farmers were reached through this platform.
-- 34% of farmers engaged with audio calls on a frequent basis. 
+- 34% of farmers engaged with audio calls on a frequent basis.
 - Over 40 per cent farmers said that the digital advisory services were among the reasons they made changes to their farming techniques.
 
 ## Takeaways
@@ -45,4 +47,4 @@ For broadcasts through SMS and audio calls, we reached out to Telenor, a major t
 
 ## Used By
 
-<Image src={PxDLogo} alt="Precision Development" />
+<Image src={logoPxD} alt="Precision Development" />

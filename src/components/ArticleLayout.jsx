@@ -46,6 +46,13 @@ export function ArticleLayout({
           property="og:description"
           content={meta.description}
         />
+        <meta property="article:author" content={meta.author} />
+        <meta property="article:publish_date" content={meta.date} />
+        <meta
+          name="publish_date"
+          property="og:publish_date"
+          content={meta.date}
+        />
         {meta.socialCard && (
           <>
             <meta
