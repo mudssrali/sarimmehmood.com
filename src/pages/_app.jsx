@@ -26,7 +26,7 @@ export default function App({ Component, pageProps, router }) {
 
   const meta = Component.layoutProps?.meta || {}
   const description =
-    meta.metaDescription || meta.description || siteConfig.descriptionShort
+    meta.metaDescription || meta.description || siteConfig.description
 
   return (
     <>
