@@ -19,8 +19,8 @@ export default function Projects() {
   return (
     <>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on dozens of impact creating projects over the years but these are the ones that I’m most proud of. Also I contributed and created a few projects on GitHub, which are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Featured projects that I have lead"
+        intro="I’ve worked on dozens of impact creating projects over the years but these are the ones that I am the most proud of. All of these impacted lives of people at scale and contributed to the collective betterment of the economic ecosystem."
       >
         <ul
           role="list"
@@ -55,6 +55,6 @@ export default function Projects() {
 Projects.layoutProps = {
   meta: {
     title: 'Projects',
-    description: 'Things I’ve made trying to put my dent in the universe.',
+    description: 'Featured projects that I have lead',
   },
 }

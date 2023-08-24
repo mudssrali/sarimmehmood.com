@@ -43,7 +43,7 @@ export const siteConfig = {
             name: 'PxD: Weather Advisory Tool',
             description:
 
-                'In partnership with the Climate Forecast Applications Network, a customized mobile-based weather advisory and forecast system was developed which is accessible to 5 million farmers of Punjab.Farmers in 36 districts receive regular advisory about upcoming weather patterns and farming advice such as seeding periods, pest management, and floodwater diversion.Microsoft’s Text to Speech conversion services are used to generate audio messages which are then broadcasted through Telenor APIs to individual farmers. Comprehensive metrics are used to generate engagement trends and to increase outreach efficacy.',
+                'A web-based weather advisory and forecast system to provide custom advisories about weather patterns and farming advice. The platform was capable of launching text campaigns and generating automated calls in multiple local languages using Text to Speech conversion services.',
 
             link: { href: 'https://precisiondev.org', label: 'precisiondev.org' },
 
