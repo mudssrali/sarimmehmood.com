@@ -1,8 +1,12 @@
-import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
 
-import logoPxD from './pxd-logo.png'
-import socialCard from './pxd.png'
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { ImageCarousel } from '@/components/ImageCarousel'
+
+import imagePxDLogo from './pxd-logo.png'
+import imageSocialCard from './pxd.png'
+import imageSample from '@/images/photos/sample.jpg'
+import imageSample2 from '@/images/photos/sample-2.jpg'
 
 export const meta = {
   author: 'Sarim Mehmood',
@@ -10,9 +14,9 @@ export const meta = {
   title: 'PxD - Weather Advisory',
   description:
     'A web-based weather advisory and forecast system to provide custom advisories about weather patterns and farming advice. The platform was capable of launching text campaigns and generating automated calls in multiple local languages using Text to Speech conversion services.',
-  socialCard: socialCard,
+  socialCard: imageSocialCard,
   pinned: false,
-  type: "project"
+  type: 'project',
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
@@ -48,4 +52,10 @@ For broadcasts through SMS and audio calls, we reached out to Telenor, a major t
 
 ## Used By
 
-<Image src={logoPxD} alt="Precision Development" />
+<Image src={imagePxDLogo} alt="Precision Development" />
+
+## Project Snapshots
+
+<ImageCarousel
+  images={[imageSample, imageSample2, imageSample, imageSample2]}
+/>
