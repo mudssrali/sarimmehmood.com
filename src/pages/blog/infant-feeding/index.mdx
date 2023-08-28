@@ -1,0 +1,54 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+
+import logoPxD from './if-logo.png'
+import socialCard from './if-logo.png'
+
+export const meta = {
+  author: 'Sarim Mehmood',
+  date: '2022-09-18',
+  title: 'Infant Feeding',
+  description:
+    'A mobile application designed to empower Lady Health Workers (LHWs) in Pakistan to deliver reliable healthcare information and support to expecting and lactating mothers. The app serves as a comprehensive tool for LHWs, providing access to a vast video library, interactive quizzes, and essential check-up data management. With an intuitive interface, LHWs can easily register patients, maintain detailed patient records, and apply integrated clinical algorithms for accurate diagnosis. With its mission to enhance healthcare outcomes, Infant Feeding is a vital resource in promoting maternal and child health across the region.',
+  socialCard: socialCard,
+  pinned: false,
+
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+## My Role
+
+As Product Manager on the pilot, I worked with a multidisciplinary team and several internal and external stakeholders to take the platform from conception to launch. I conducted research, built user stories, and oversaw the development of the platform.
+
+## Process
+
+The preliminary aim of this pilot is to transform the way Lady Health Workers in the target district provide healthcare services to pregnant and lactating mothers. This includes collection of maternal and infant health data, imparting of healthcare information, and to provide Lady Health Workers with a platform to keep up with healthcare literature.
+
+The following were the major pain points of building such a platform:
+
+- Unreliable access to internet
+- Low-literacy levels of the LHWs
+- Target age demographic of ~50 years
+
+We began by building user story maps to outline the complete flow that would satisfy all functional requirements of the platform. We evaluated LHW operations, their pain points, their interactions with pregnant and lactating mothers and how a digital platform would transform all of them into a coherent, easy to use, and lightweight platform. We built user personas for the LHWs and the pregnant and lactating mothers and ran experience exercises to assess bottlenecks and potential areas of improvements that could reduce information overload for the LHWs keeping in mind our target demographic.
+
+The prototype consisted of three major modules:
+
+Checkup Flows: These are the health cards for each pregnant or lactating mother and their children. Each LHW has a repository of their assigned patients who they visit for checkups and advice based on their condition. The App records all interactions and keeps track of checkups and checkups due for all mothers based on their health status.
+
+Clinical Algorithms: These are a set of dynamic decision trees which consist of comprehensive healthcare questionnaires which are interconnected within a unit and between units as well. For example, for a mother who recently gave birth, the post natal unit will be triggered which would not only apply directly but would also trigger other units, for example infant health, where necessary. These units generate a complete set of diagnostic data for the mothers and their children and then based on the situation, generate clinical advice which can be imparted by the LHW to the mother.
+
+Resource Library: This provides access to a variety of resources, such as videos, quizzes, and articles, on maternal and child health.
+
+## Metrics
+
+Yet to be launched
+
+## Takeaways
+
+Yet to be launched
+
+## Used By
+
+Yet to be launched

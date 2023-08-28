@@ -4,6 +4,7 @@ import logoI2cInc from '@/images/logos/i2c.svg'
 import logoPxD from '@/images/logos/pxd.svg'
 import logoIlmx from '@/images/logos/ilmx.png'
 import logoMISchool from '@/images/logos/mischool.ico'
+import logoInfantFeeding from '@/images/logos/if-logo.png'
 
 export const siteConfig = {
     name: "Sarim Mehmood",
@@ -49,6 +50,18 @@ export const siteConfig = {
 
             logo: logoPxD,
         },
+
+        {
+            name: 'Infant Feeding',
+            description:
+
+                'A mobile application designed to empower Lady Health Workers (LHWs) in Pakistan to deliver reliable healthcare information and support to expecting and lactating mothers. It provides access to a vast video library, interactive quizzes, and essential check-up data management to allow LHWs to easily register patients, maintain detailed patient records, and apply integrated clinical algorithms for accurate diagnosis.',
+
+            link: { href: '/blog/infant-feeding', label: 'Read more' },
+
+            logo: logoInfantFeeding,
+        },
+
         {
             name: 'MISchool',
             description:
