@@ -9,7 +9,7 @@ import { siteConfig } from '@/constants/config'
 import '@/styles/tailwind.css'
 import 'focus-visible'
 
-import socialCardLarge from '@/images/social-card-large.jpg'
+import socialCardLarge from '@/images/social-card-large.png'
 
 function usePrevious(value) {
   let ref = useRef()
