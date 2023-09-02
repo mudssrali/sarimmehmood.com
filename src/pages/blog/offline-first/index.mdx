@@ -1,0 +1,71 @@
+import Image from 'next/image'
+import offline from './offline.jpg'
+import speed from './speed.png'
+import coverage from './coverage.png'
+
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Sarim Mehmood',
+  date: '2022-09-18',
+  title: 'Opinion | Offline First - Making Software Inclusive',
+  description:
+    'A brief look into the challenges of internet accessibility in Pakistan and how modern technology can offset these limitations.',
+  pinned: false,
+}
+
+<div>
+  <Image src={offline} alt="Offline Apps" />
+</div>
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+A typical software does not care much for the network infrastructure available to the end user. 
+
+Frayed UI/UX designers will spend their nights on carefully crafted and suitably nuanced screens, hordes of engineers will sit through grueling code reviews to build a pristine codebase that flawlessly executes the business logic, and the sales team will promise electrifying returns to the stakeholders in lengthy board meetings but no one really cares if the end user will be using the software on the home internet, on a cellular internet, or maybe a shopping mall Wi-Fi. Or in the worst case: Does the end user even have access to a stable internet connection?     
+
+With an internet penetration of just above 36% at the start of this year, software in Pakistan faces a uniquely dreary situation: On one end of the internet accessibility spectrum are the bustling metropolitans with their thriving technology ecosystem. Having a fixed internet connection is a commonality and multiple Internet Services Providers (ISPs) boast speeds of several megabits per second. Even a cellular internet outage is a temporary inconvenience at best. For example, the following is the average mobile data bandwidth in Lahore as calculated by Ookla:
+
+<div>
+  <Image src={speed} alt="Lahore Median Speed - Ookla" />
+</div>
+
+On the other end of this spectrum are the internet dead zones. These areas do not have the infrastructure to support stable access to the internet and receiving cellular signals too is a hit or miss. A huge bulk of the population, almost half of the country, resides in these areas. This can be seen in the coverage map of a popular telecommunication provider of Pakistan built by nPerf:
+
+<div>
+  <Image src={coverage} alt="Coverage Ufone" />
+</div>
+
+Between these two opposites, which are light years away from each other in terms of social development and infrastructure, there is a huge subset of people who have access to the internet but do not enjoy the one click processing wonders that most of us are used to.
+
+Software in Pakistan has long been oblivious of this marginalized strata of users. Popular software takes a binary approach on how to facilitate them. Users either get access to all of the features of a platform, or they get shown a death screen and there is no in between.
+
+While this exclusionary behavior is no means a fault of the software community which is doing wonders in terms of competing with the global software market, it definitely falls on them to revisit their approach when building for local users who are not so infrastructure fortunate. With the vast amount of resources that technology now has at its will, global software has long figured out ways to bypass this damning limitation of access and offline applications have slowly crept up their presence and they have a way to help us.
+
+Offline first apps work by forecasting user needs and storing the data that the user will require to continue engaging with the platform on their local storage. The following is how an offline App processes data:
+
+- The platform forecasts user needs by analyzing user data and figuring out what a user might require while in offline mode.
+- The data is stored in local storage of the mobile device.
+- A user interacts with the platform while it is offline and makes an action.
+- Changes in data are stored and indexed in the local storage.
+- The saved data can be viewed and edited as per user need which means several actions can be performed in succession.
+- When the user gets an internet connection, the platform automatically syncs the data with the server
+
+An offline platform automatically determines which data should be available offline for each user, based on the application model and the user's access permissions. This means that each user only sees the data that they are allowed to access. The data that is synced to each user's device can be filtered and controlled by setting up granular conditions and services. When a user logs out, all of the data and resources that were synced to their device are automatically removed. This ensures a complete product interaction while ensuring data security and providing an enhanced user experience.
+
+The use cases of offline Apps are unlimited. From E-commerce marketplaces to financial technologies, offline apps can essentially replace online first applications. 
+
+- E-commerce: Let users browse products, add items to their cart, and checkout even when they don't have an internet connection. 
+
+- Education: Save educational content on the local storage so that students can access it whenever they want.
+
+- Healthcare: Allow access to important medical information, such as medication reminders for people who have chronic health conditions.
+
+- Navigation: Let your users get directions even when they're not connected to the internet.
+
+- Financial Technology: Let your users check their account balance, make time-sensitive bill payments, and transfer restricted funds while offline. These transactions can be queued and settled with the banks when the internet is available. 
+
+While offline first Apps require the product and development team to spend considerable time on building synchronization and data management capabilities, the end results of such platforms make all of the difference to someone who is stranded in an area with unstable internet. With more than half of our people isolated from the world because of internet accessibility, offline apps can somewhat bridge the gap until the necessary network infrastructure catches up.  
+
+
+
