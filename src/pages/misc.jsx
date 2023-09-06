@@ -27,8 +27,8 @@ export default function Uses() {
   return (
     <>
       <SimpleLayout
-        title="Software I use, gadgets I love, and other things I recommend."
-        intro="Here’s a big list of all of my favorite stuff that I use to build, design, document a software, to share something in the community and stay productive."
+        title=""
+        intro=""
       >
         <div className="space-y-20">
         </div>
@@ -39,8 +39,8 @@ export default function Uses() {
 
 Uses.layoutProps = {
   meta: {
-    title: 'Uses',
+    title: '',
     description:
-      'Software I use, gadgets I love, and other things I recommend.',
+      '',
   },
 }

@@ -36,8 +36,8 @@ export default function ArticlesIndex({ articles }) {
   return (
     <>
       <SimpleLayout
-        title="Writing on software building, team and company building, and the education."
-        intro="All of my long-form thoughts on programming, leadership, product development, and more, collected in chronological order."
+        title="Writings on product management, team building, and the technology ecosystem."
+        intro=""
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">

@@ -5,12 +5,13 @@ import logoPxD from '@/images/logos/pxd.svg'
 import logoIlmx from '@/images/logos/ilmx.png'
 import logoMISchool from '@/images/logos/mischool.ico'
 import logoInfantFeeding from '@/images/logos/if-logo.png'
+import micarelogo from '@/images/logos/micarelogo.png'
 
 export const siteConfig = {
     name: "Sarim Mehmood",
     nameShort: "Sarim",
-    designation: "Product Manager",
-    description: "I’m Sarim, a product manager based in Lahore, Pakistan. I work at CERP where we develop technologies that empower regular people to bolster economic issues and inequalities.",
+    designation: "Product enthusiast with a flair for all things technology",
+    description: "I’m Sarim, a product manager based in Lahore, Pakistan. I work at CERP where we develop technologies that empower people to bolster economic issues and inequalities.",
     email: "sarimmehmood1@gmail.com",
     socialLinks: {
         linkedIn: "https://linkedin.com/in/sarimmehmood1",
@@ -63,18 +64,22 @@ export const siteConfig = {
         },
 
         {
+            name: 'MICare',
+            description:
+
+                'An offline first suite of applications designed to deliver nutritional and health products to expecting and lactating mothers. The platform manages patient profiles, sales and visit data, and generates comprehensive metrics for all involved stakeholders.',
+
+            link: { href: '/blog/micare', label: 'Read more' },
+
+            logo: micarelogo,
+        },
+
+        {
             name: 'MISchool',
             description:
-                'School Management software application is designed  to transform operations and management processes and targets low-cost private, primary and secondary government schools in Pakistan.',
+                'School Management software application designed to transform operations and management processes and targets low-cost private, primary and secondary government schools in Pakistan.',
             link: { href: 'https://mischool.pk', label: 'mischool.pk' },
             logo: logoMISchool,
-        },
-        {
-            name: 'IlmExchange',
-            description:
-                'Ilm Exchange is a digital education platform that connects schools, teachers and students with affordable resources to enable quality teaching and learning across Pakistan.',
-            link: { href: '#', label: 'ilmexchange.com' },
-            logo: logoIlmx,
         }
     ]
 }

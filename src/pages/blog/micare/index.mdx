@@ -1,0 +1,51 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { ImageCarousel } from '@/components/ImageCarousel'
+import Image from 'next/image'
+import rspnlogo from './rspnlogo.jpg'
+
+
+export const meta = {
+  author: 'Sarim Mehmood',
+  date: '2023-07-18',
+  title: 'MICare',
+  description:
+    'An offline first suite of applications designed to deliver nutritional and health products to expecting and lactating mothers. The platform manages patient profiles, sales and visit data, and generates comprehensive metrics for all involved stakeholders.',
+  pinned: false,
+  type: 'project',
+
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+## My Role
+
+As Product Manager on the pilot, I worked with several internal and external stakeholders to take the platform from conception to launch. I conducted user research, built user stories, managed internal and external stakeholders and oversaw the development of the platform.
+
+## Process
+
+The vision behind the platform was to transform how Lady Health Workers (LHWs) went from house to house and sold a nutritional product Wellma based on the condition of a woman. Wellma is a nutritional product which is designed as a supplement to conveniently provide nutrients to expecting or lactating mothers or married women of reproductive age (MWRA) who are malnourished. 
+
+The first thing that we did was to evaluate what the current process in the field was. This meant figuring out what the stakeholders in the process were, what part they played in the overall project implementation and what were the points that could be transformed by a digital platform. After analyzing the operations, identifying stakeholders, the end users, and the gaps for digitization, we started building user stories for the end users keeping in mind that this would be a low literacy, low tech userbase and the platform has to work offline with internet accessibility unavailable for days at end. 
+
+Based on the vision, and the limitations, we built up a prototype but experimenting and brainstorming on multiple approaches to build a platform that would not only digitize the operation, but would also make it much more efficient, and seamless. We tested the platform in the target areas, went back to the drawing board several times until we had the ideal platform in sight. 
+
+From that, we went into development phase where we used an Agile methodoloy to build and deliver value. Every other week was a new feedback session, new learning and new ideas. We shipped features in sprints, which were duly tested in the field and learned from. 
+
+The platform is currently operational in three districts of Pakistan and impacting over 10,000 pregnant and lactating mothers on a monthly basis.
+
+## Takeaways
+
+- How the product vision sometimes gets blurry in the face of client demands but building a feature factory on demand will hurt the product in the long run.
+- How when teams feel like they are informed and involved, they are more likely to trust each other and work together. A suggestion, instead of a demand goes a long way in building this trust.
+- How to best manage a remote development team when the individuals are hard to reach and lack communication and progress.  
+
+## Used By
+
+<div>
+  <Image src={rspnlogo} alt="Rural Support Programmes Network" />
+</div>
+
+<ImageCarousel
+  images={[]}
+/>
+
