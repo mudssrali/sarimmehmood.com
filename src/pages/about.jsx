@@ -9,7 +9,7 @@ import {
 } from '@/components/SocialIcons'
 import { siteConfig } from '@/constants/config'
 
-import portraitImage from '@/images/portrait.png'
+import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
