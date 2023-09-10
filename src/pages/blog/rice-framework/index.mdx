@@ -1,0 +1,35 @@
+import Image from 'next/image'
+import { ImageCarousel } from '@/components/ImageCarousel'
+import one from './1.png'
+import two from './2.png'
+import three from './3.png'
+import four from './4.png'
+import five from './5.png'
+import six from './6.png'
+import seven from './7.png'
+
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Sarim Mehmood',
+  date: '2023-09-22',
+  title: 'RICE Framework',
+  description:
+    'How to score and prioritize features using RICE model.',
+  pinned: false,
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+As opposed to what the acronyms suggests, the RICE model is not related to a food item. It is an easy to implement, yet a ruthless prioritization model which relies solely on data to combine prioritization factors in a consistent manner.
+
+RICE model can be used to assign numerical values to each item in a product backlog. The higher the RICE number for an item, the more value it will provide to the end user. To understand how RICE works, the following is a quick and easy demonstartion to learn it in a few minutes:
+
+<div>
+<p></p>
+</div>
+
+<ImageCarousel
+  images={[one, two, three, four, five, six, seven]}
+/>
+
