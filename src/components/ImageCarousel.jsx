@@ -41,9 +41,9 @@ export function ImageCarousel({ images = [] }) {
         onClick={
           slideIndex > 0 ? () => setSlideIndex(slideIndex - 1) : undefined
         }
-        className="group absolute top-0 left-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+        className="group absolute -left-6 md:-left-20 z-30 flex top-1/2 transform -translate-y-1/2 cursor-pointer items-center justify-center px-4 focus:outline-none"
       >
-        <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
+        <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-transparent md:bg-gray-800/30 md:group-hover:bg-gray-800/60 group-focus:outline-none group-focus:ring-0 md:dark:bg-white/30 md:dark:group-hover:bg-white/60 dark:group-focus:ring-0">
           <svg
             className="h-4 w-4 text-white dark:text-gray-800"
             aria-hidden="true"
@@ -69,9 +69,9 @@ export function ImageCarousel({ images = [] }) {
             ? () => setSlideIndex(slideIndex + 1)
             : undefined
         }
-        className="group absolute top-0 right-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+        className="group absolute top-1/2 transform -translate-y-1/2 -right-5 md:-right-20 z-30 flex cursor-pointer items-center justify-center px-4 focus:outline-none"
       >
-        <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
+        <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-transparent md:bg-gray-800/30 md:group-hover:bg-gray-800/60 group-focus:outline-none group-focus:ring-0  md:dark:bg-white/30 md:dark:group-hover:bg-white/60 dark:group-focus:ring-0">
           <svg
             className="h-4 w-4 text-white dark:text-gray-800"
             aria-hidden="true"
