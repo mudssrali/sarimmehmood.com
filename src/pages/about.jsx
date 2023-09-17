@@ -58,7 +58,7 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I'm passionate about building products that make a difference in people's lives. I believe that technology can be used to solve real problems and make the world a better place. At CERP, I'm part of a team of talented development professionals who are working on some of the most pressing economic issues impacting Education, Agriculture and Public Health. We're constantly challenging ourselves to come up with new ideas and to find new ways to improve our apprach to serve the local population.
+                I'm passionate about building products that make a difference in people's lives. I believe that technology can be used to solve real problems and make the world a better place. At CERP, I'm part of a team of talented development professionals who are working on some of the most pressing economic issues impacting Education, Agriculture and Public Health. We're constantly challenging ourselves to come up with new ideas and to find new ways to improve our approach to serve the local population.
               </p>
               <p></p>
             </div>
