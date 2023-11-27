@@ -19,8 +19,8 @@ export default function Projects() {
   return (
     <>
       <SimpleLayout
-        title="Featured projects that I have lead"
-        intro="I’ve worked on dozens of impact creating projects over the years but these are the ones that I am the most proud of. All of these impacted lives of people at scale and contributed to the collective betterment of the economic ecosystem."
+        title="Featured projects that I have led"
+        intro="I have worked on dozens of impact creating projects over the years but these are the ones that I am the most proud of. All of these have and are contunuing to impact lives of people at scale and contribute to the collective betterment of the economic ecosystem."
       >
         <ul
           role="list"
