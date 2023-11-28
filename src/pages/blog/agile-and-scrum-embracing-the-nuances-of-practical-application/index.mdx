@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import agile_and_scrum from './agile-and-scrum.jpg'
+import ImageAgileAndScrum from './agile-and-scrum.jpg'
 
 import { ArticleLayout } from '@/components/ArticleLayout'
 
@@ -9,14 +9,15 @@ export const meta = {
   title: 'Agile and Scrum: Embracing the Nuances of Practical Application',
   description:
     'A look into how Agile and Scrum are fundamentally incomplete and this is precisely what makes them so great.',
+  socialCard: ImageAgileAndScrum,
   pinned: false,
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-    <div>
-          <Image src={agile_and_scrum} alt="Agile and Scrum" />
-          </div>
+<div>
+    <Image src={ImageAgileAndScrum} alt="Agile and Scrum" />
+</div>
 
 In the ever-evolving world of software development, Agile and Scrum have emerged as dominant methodologies, changing the way projects are managed and executed. The emphasis on flexibility, adaptability, and continuous improvement that Agile and Scrum, being Agile’s most popular framework try to instill in teams, has resonated with organizations across industries, leading to widespread adoption and a chorus of praise. Yet, amidst this very warm welcome, it is crucial to acknowledge the inherent incompleteness of Agile and Scrum, and recognizing them not as rigid blueprints but as flexible frameworks that demand careful tailoring to the unique needs of each project. 
 

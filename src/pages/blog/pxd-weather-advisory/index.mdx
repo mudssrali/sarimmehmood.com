@@ -4,7 +4,6 @@ import { ArticleLayout } from '@/components/ArticleLayout'
 import { ImageCarousel } from '@/components/ImageCarousel'
 
 import imagePxDLogo from './pxd-logo.png'
-import imageSocialCard from './pxd.png'
 import pxdFive from '@/images/photos/pxd-five.png'
 import pxdFour from '@/images/photos/pxd-four.png'
 import pxdTwo from '@/images/photos/pxd-two.gif'
@@ -18,7 +17,7 @@ export const meta = {
   title: 'PxD - Weather Advisory',
   description:
     'A web-based weather advisory and forecast system to provide custom advisories about weather patterns and farming advice. The platform was capable of launching text campaigns and generating automated calls in multiple local languages using Text to Speech conversion services.',
-  socialCard: imageSocialCard,
+  socialCard: pxdBanner,
   pinned: false,
   type: 'project',
 }
@@ -26,9 +25,7 @@ export const meta = {
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 <div>
-  
   <Image src={pxdBanner} alt = "Precision Development" className="mt-0"/>
-
 </div>
 
 ## My Role
