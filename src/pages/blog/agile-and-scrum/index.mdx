@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import agile_and_scrum from './agile-and-scrum.jpg'
+import meme1 from './meme1.jpg'
+import meme2 from './meme2.png'
+import meme3 from './meme3.jpg'
 
 import { ArticleLayout } from '@/components/ArticleLayout'
 
@@ -24,21 +27,32 @@ In the ever-evolving world of software development, Agile and Scrum have emerged
 
 The software development landscape has long been characterized by a constant pursuit of efficiency, effectiveness, and adaptability. In the early days of software development, the Waterfall methodology, with its emphasis on sequential phases and upfront planning, was the dominant approach. I like to think of the Waterfall method as a conveyor belt in a factory; each step builds on the last in a timed, mechanical way - the product slowly taking its shape as it passes from one hand to the other. However, as projects are becoming complex and uncertain by the second, the Waterfall method's rigidity seems like a hindrance to the innovation and responsiveness to change.
 
+    <div>
+          <Image src={meme1} alt="Waterfall" />
+          </div>
+
 In response to these limitations, Agile and Scrum advocate for an iterative approach that embraces change and values collaboration. Instead of waiting at the end of the conveyor belt, why not stand smack in the middle and get your hands dirty and build what is really needed. Agile principles, such as the emphasis on customer satisfaction, continuous improvement, and adaptive planning, resonate with the evolving nature of software development. Seems like a heaven-sent, right?
-Unveiling the Incomplete Nature of Agile and Scrum
+
+## Unveiling the Incomplete Nature of Agile and Scrum
 
 The widespread adoption of Agile and Scrum has transformed the software development landscape, bringing about a shift towards more flexible and adaptable project management practices. However, it is essential to recognize that Agile and Scrum are not complete, one-size-fits-all solutions. They are rather families of methodologies, each with its own set of principles and practices, that provide a framework for adapting to the unique context of each project. 
 Agile Manifesto talks about this in the following way:
 
-*While there is value in the items on the right (process & tools, comprehensive documentation, contract negotiation, following a plan), we value the items on the left more (Individual and interactions, working software, customer collaboration, responding to change).*
+    <blockquote> While there is value in the items on the right (process & tools, comprehensive documentation, contract negotiation, following a plan), we value the items on the left (Individual and interactions, working software, customer collaboration, responding to change) more.</blockquote>
 
 By prioritizing certain things over the others while acknowledging that there is value in the latter, Agile acknowledges that it does not provide a complete, plug-and-play solution for software development. Instead, it emphasizes the importance of flexibility, adaptability, and continuous learning to navigate the complexities of software projects. 
 
 Similarly, The Scrum Guide, the defining document for Scrum, puts down the incompleteness of the Scrum Framework like this:
 
-*The Scrum framework is purposefully incomplete, only defining the parts required to implement Scrum theory. Scrum is built upon by the collective intelligence of the people using it. Rather than provide people with detailed instructions, the rules of Scrum guide their relationships and interactions.*
+    <blockquote> The Scrum framework is purposefully incomplete, only defining the parts required to implement Scrum theory. Scrum is built upon by the collective intelligence of the people using it. Rather than provide people with detailed instructions, the rules of Scrum guide their relationships and interactions. </blockquote>
 
-What both of these statements suggest is that the incompleteness of Agile and Scrum is not a weakness but rather a strength. This incompleteness allows for tailoring these methodologies to the specific needs of a project, considering factors such as team dynamics, project complexity, organizational culture, and industry nuances. This flexibility empowers product managers and development teams to craft a project management approach that aligns with the specific challenges and opportunities at hand.
+So what now? How can incomplete ideas deliver value to a fast paced, calculated world of software development? Wouldn't that defeat the purpose of a framework?
+
+ <div>
+       <Image src={meme2} alt="Issues with Agile" />
+          </div>
+
+Not really. What both of these statements suggest is that the incompleteness of Agile and Scrum is not a weakness but rather a strength. This incompleteness allows for tailoring these methodologies to the specific needs of a project, considering factors such as team dynamics, project complexity, organizational culture, and industry nuances. This flexibility empowers product managers and development teams to craft a project management approach that aligns with the specific challenges and opportunities at hand.
 
 ## Embracing the Nuances: Tailoring Agile and Scrum for Unique Performances
 
@@ -66,5 +80,12 @@ For Developers:
 
 By carefully considering these factors, all involved parties can effectively tailor Agile and Scrum to the unique requirements of each project, ensuring that these methodologies not only support project goals but also align with the team's capabilities and the organization's culture. 
 
-Agile and Scrum are not magic wands that will transform your software development process into a F500 company or put you up for the Best Places to Work award. Instead, they are tools that need to be carefully crafted and wielded by the people who are going to use them. The success of Agile and Scrum hinges on the expertise and adaptability of the people who implement them. So, if you're looking for a one-size-fits-all solution, Agile and Scrum are not it. But if you're willing to put in the effort to understand their nuances and tailor them to your specific needs, you'll be well on your way to unlocking the true potential of these methodologies. Remember, Agile and Scrum are not about following rules, they're about building relationships, fostering collaboration, and embracing the unexpected. So, go out there, experiment, adapt, and most importantly, have fun while doing it.
+Agile and Scrum are not magic wands that will transform your software development process into a F500 company or put you up for the Best Places to Work award. Instead, they are tools that need to be carefully crafted and wielded by the people who are going to use them. The success of Agile and Scrum hinges on the expertise and adaptability of the people who implement them. So, if you're looking for a one-size-fits-all solution, Agile and Scrum are not it.
 
+Be willing to put in the effort to understand Agile and Scrum's nuances and tailor them to your specific needs and you'll be well on your way to unlocking the true potential of these methodologies. Remember, Agile and Scrum are not about following rules, they're about building relationships, fostering collaboration, and embracing the unexpected. So, go out there, experiment, adapt, and most importantly, have fun while doing it.
+
+Tl;dr - Don't be this person:
+
+   <div>
+         <Image src={meme3} alt="Agile" />
+          </div>
