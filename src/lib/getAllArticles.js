@@ -17,7 +17,7 @@ export async function getAllArticles() {
     cwd: path.join(process.cwd(), 'src/pages/blog'),
   })
 
-  let articles = await Promise.all(articleFilenames.map(importArticle))
+  let articles = (await Promise.all(articleFilenames.map(importArticle))).filter(a => !a.hidden)
 
   // find pinned article
   const pinnedArticle = articles.find(a => a.pinned)
