@@ -42,7 +42,7 @@ export const siteConfig = {
                 title: 'Technical Writer',
                 logo: logoIAXServices,
                 start: '2019',
-                end: '2021',
+                end: '2019',
             },
         ],
         link: "/sarim_mehmood_cv.pdf"
