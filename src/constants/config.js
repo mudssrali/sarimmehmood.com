@@ -6,6 +6,7 @@ import logoIlmx from '@/images/logos/ilmx.png'
 import logoMISchool from '@/images/logos/mischool.ico'
 import logoInfantFeeding from '@/images/logos/if-logo.png'
 import micarelogo from '@/images/logos/micarelogo.png'
+import logoIAXServices from '@/images/logos/iaxservices.svg'
 
 export const siteConfig = {
     name: "Sarim Mehmood",
@@ -31,13 +32,20 @@ export const siteConfig = {
             },
             {
                 company: 'i2c Inc.',
-                title: 'Global Product Management',
+                title: 'Editor - Global Product Management',
                 logo: logoI2cInc,
                 start: '2019',
                 end: '2021',
             },
+            {
+                company: 'IAX Services.',
+                title: 'Technical Writer',
+                logo: logoIAXServices,
+                start: '2019',
+                end: '2021',
+            },
         ],
-        link: "https://sarimmehmood.notion.site/sarimmehmood/Hello-f470b1fc487b4a4088b472cae74817bd"
+        link: "/sarim_mehmood_cv.pdf"
     },
     projects: [
 
