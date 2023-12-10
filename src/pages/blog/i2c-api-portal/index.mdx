@@ -1,0 +1,69 @@
+import Image from 'next/image'
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { ImageCarousel } from '@/components/ImageCarousel'
+import i2c1 from './i2cinc1.png'
+import i2c2 from './i2cinc2.png'
+import i2c3 from './i2cinc3.png'
+
+
+export const meta = {
+  author: 'Sarim Mehmood',
+  date: '2023-01-18',
+  title: 'i2c API Portal',
+  description:
+    'Case Study: From PDFs to a Digital API Portal',
+  pinned: false,
+  type: 'project',
+
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+## Executive Summary
+
+This case study explores the transformation of a cumbersome and manual API documentation process into a streamlined and efficient online portal. The previous system, relying on a 2000-page PDF and manual document updates, was prone to errors, delays, and limited accessibility. The new API portal provides a centralized, real-time platform for managing and publishing API information, significantly improving efficiency and collaboration across teams.
+
+## Challenges
+
+- Inefficient Information Flow: The previous process relied on slow and disconnected communication between various teams, creating single points of failure and version control issues.
+- Document-Based Workflow: Maintaining a large PDF and individual Word documents was time-consuming, error-prone, and offered limited accessibility and collaboration features.
+- Technical Debt: The manual process hampered scalability, increased maintenance effort, and lacked flexibility to adapt to changing needs.
+
+## Solution
+
+To address these challenges, we developed an API portal:
+
+- Centralized Repository: All API information, including names, types, versions, and modifications, is stored in a single, secure location.
+- Real-Time Updates: Changes are reflected instantly, eliminating delays and ensuring everyone has the latest information.
+- Version Control: The portal automatically tracks and manages versions, eliminating the risk of inconsistencies and lost changes.
+- Improved Accessibility: The portal is accessible to all authorized users from any location, facilitating remote collaboration.
+- Enhanced Search: Users can easily search for specific API information through keyword search functionality.
+- Reduced Technical Debt: Automation eliminates manual tasks, simplifying maintenance and increasing scalability.
+
+## Benefits
+
+- Increased Efficiency: The portal significantly reduces time spent on document creation, updates, and version control.
+- Improved Collaboration: Real-time updates and access enable seamless collaboration between teams.
+- Reduced Errors: Automation minimizes the risk of manual errors and inconsistencies.
+- Enhanced Visibility: The portal provides a clear overview of all available APIs and their status.
+- Improved Client Experience: Clients have immediate access to the latest API information, streamlining their workflow.
+- Reduced Costs: Automating tasks and eliminating redundant documents minimizes resource expenditure.
+
+## Results
+
+- Reduction in Time Spent on Documentation: Automating updates and version control freed up significant time for team members.
+- Improvement in Collaboration: Real-time access and updates facilitated seamless communication between teams.
+- Zero Version Control Errors: Automation eliminated the risk of incorrect or outdated information being used.
+- Increase in Client Satisfaction: Clients reported improved ease of access and understanding of API information.
+- Improvements in Business Development: The portal was a huge success as a showcase for potential clients.
+
+## Conclusion
+
+The implementation of the API portal has transformed the way we managed and shared API information. By streamlining processes, eliminating manual tasks, and providing real-time access, the portal significantly improved efficiency, collaboration, and client satisfaction. This case study showcases the transformative power of technology in addressing organizational challenges and driving positive business outcomes.
+
+## Project Snapshots
+
+    <ImageCarousel
+          images={[i2c3, i2c1, i2c2]}
+        />
+

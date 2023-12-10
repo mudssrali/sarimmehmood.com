@@ -88,6 +88,18 @@ export const siteConfig = {
                 'School Management software application designed to transform operations and management processes and targets low-cost private, primary and secondary government schools in Pakistan.',
             link: { href: 'https://mischool.pk', label: 'mischool.pk' },
             logo: logoMISchool,
-        }
+        },
+
+        {
+            name: 'Case Study: i2c API Portal',
+            description:
+
+                'A centralized, real-time online portal to replace a 2000-page PDF and manual document updates, improving efficiency, collaboration, and client satisfaction.',
+
+            link: { href: '/blog/i2c-api-portal', label: 'Read more' },
+
+            logo: logoI2cInc,
+        },
+
     ]
 }
