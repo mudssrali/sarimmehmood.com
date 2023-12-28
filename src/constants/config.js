@@ -12,7 +12,7 @@ export const siteConfig = {
     name: "Sarim Mehmood",
     nameShort: "Sarim",
     designation: "Product enthusiast with a flair for all things technology",
-    description: "I’m Sarim, a product manager based in Lahore, Pakistan. I work at CERP where we develop technologies that empower people to bolster economic issues and inequalities.",
+    description: "I’m Sarim, a product manager and a technology enthsiast. I work at CERP where we develop technologies that empower people to bolster economic issues and inequalities.",
     email: "sarimmehmood1@gmail.com",
     socialLinks: {
         linkedIn: "https://linkedin.com/in/sarimmehmood1",
@@ -64,7 +64,7 @@ export const siteConfig = {
             name: 'Infant Feeding',
             description:
 
-                'A mobile application designed to empower Lady Health Workers (LHWs) in Pakistan to deliver reliable healthcare information and support to expecting and lactating mothers. It provides access to a vast video library, interactive quizzes, and essential check-up data management to allow LHWs to easily register patients, maintain detailed patient records, and apply integrated clinical algorithms for accurate diagnosis.',
+                'A mobile application designed to empower Lady Health Workers (LHWs) to deliver reliable healthcare information and support to expecting and lactating mothers. LHWs can easily register patients, maintain detailed patient records, and apply integrated clinical algorithms for accurate diagnosis.',
 
             link: { href: '/blog/infant-feeding', label: 'Read more' },
 

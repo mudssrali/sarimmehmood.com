@@ -20,7 +20,7 @@ export default function Projects() {
     <>
       <SimpleLayout
         title="Featured projects that I have led"
-        intro="I have worked on dozens of impact creating projects over the years but these are the ones that I am the most proud of. All of these have and are contunuing to impact lives of people at scale and contribute to the collective betterment of the economic ecosystem."
+        intro="I have worked on several impact creating projects over the years but these are the ones that I am the most proud of. All of these have and are contunuing to impact lives of people at scale and contribute to the collective betterment of the ecosystem."
       >
         <ul
           role="list"
@@ -55,6 +55,6 @@ export default function Projects() {
 Projects.layoutProps = {
   meta: {
     title: 'Projects',
-    description: 'Featured projects that I have lead',
+    description: 'Featured projects that I have led',
   },
 }

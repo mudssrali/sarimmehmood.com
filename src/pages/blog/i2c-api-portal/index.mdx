@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import { ArticleLayout } from '@/components/ArticleLayout'
-import { ImageCarousel } from '@/components/ImageCarousel'
-
 import i2c1 from './i2cinc1.png'
 import i2c2 from './i2cinc2.png'
 import i2c3 from './i2cinc3.png'
@@ -64,7 +62,20 @@ The implementation of the API portal has transformed the way we managed and shar
 
 ## Project Snapshots
 
-    <ImageCarousel
-          images={[i2c3, i2c1, i2c2]}
-        />
+### PDF Document
 
+<div>
+          <Image src={i2c3} alt="PDF Document" />
+          </div>
+
+### Portal Landing Page
+
+<div>
+          <Image src={i2c1} alt="API Portal" />
+          </div>
+
+### API Library
+
+<div>
+          <Image src={i2c2} alt="API Portal" />
+          </div>
