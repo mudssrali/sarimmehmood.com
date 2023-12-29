@@ -3,8 +3,8 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 export default function Templates() {
   return (
     <SimpleLayout
-      title="Some of my work"
-      intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      title="Templates For My Product Work"
+      intro="From requirement gathering to building test cases, these are a few documents I use frequently to build intuitive and scalable products. Use them well!"
     >
       <WorkTemplates />
     </SimpleLayout>
@@ -14,33 +14,19 @@ export default function Templates() {
 const templates = [
   {
     id: 1,
-    name: 'Example 1',
-    caption: 'Sarim Mehmood CV',
-    href: '/sarim_mehmood_cv.pdf',
-    imageSrc:
-      'https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    imageAlt:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: 'Product Requirement Document',
+    caption: 'Wrangle ten thousand ideas into one coherent document.',
+    href: '/product_requirement_document.pdf',
+    imageSrc: '/prd.jpg',
+    imageAlt: 'Product Requirement Gathering',
   },
   {
     id: 2,
-    name: 'Example 2',
-    caption: 'Work on Healthcare',
-    href: '#',
-    imageSrc:
-      'https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    imageAlt:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    id: 3,
-    name: 'Example 3',
-    caption: 'Work on Agriculture',
-    href: '#',
-    imageSrc:
-      'https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    imageAlt:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: 'Target Market Analysis',
+    caption: 'Find out what the playground is like before you set shop.',
+    href: '/target_market_analysis.pdf',
+    imageSrc: '/target_market.jpg',
+    imageAlt: 'Target Market Analysis'
   },
 ]
 
@@ -74,7 +60,7 @@ export function WorkTemplates() {
               <a
                 href={t.href}
                 download
-								className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200"
+                className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200"
               >
                 Download<span className="sr-only">, {t.name}</span>
               </a>
