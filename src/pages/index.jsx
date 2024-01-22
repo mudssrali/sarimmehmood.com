@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Script from 'next/script'
 import { useRouter } from 'next/router'
 import clsx from 'clsx'
+import { Resend } from 'resend';
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -17,6 +18,7 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import { useState } from 'react'
+import { EmailTemplate } from '@/components/EmailTemplate'
 
 function MailIcon(props) {
   return (
@@ -108,6 +110,7 @@ function Newsletter() {
     <form
       data-netlify="true"
       name="newsletter"
+      action='/api/send'
       onSubmit={(event) => {
         event.preventDefault()
 
@@ -120,6 +123,21 @@ function Newsletter() {
           body: new URLSearchParams(formData).toString(),
         })
           .then(() => router.push('/thank-you'))
+          .catch((error) => {
+            setSubmitting(false)
+            alert(error)
+          })
+
+        const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+
+        resend.emails.send({
+          from: 'sarimmehmood1@gmail.com',
+          to: 'sarimmehmood1@gmail.com',
+          subject: 'Hello World',
+          react: EmailTemplate({ firstName: 'Sarim Mehmood' })
+        }).then(() => {
+          router.push('/thank-you')
+        })
           .catch((error) => {
             setSubmitting(false)
             alert(error)
