@@ -12,7 +12,7 @@ export const siteConfig = {
     name: "Sarim Mehmood",
     nameShort: "Sarim",
     designation: "Product enthusiast with a flair for all things technology",
-    description: "I’m Sarim, a product manager and a technology enthsiast. I work at CERP where we develop technologies that empower people to bolster economic issues and inequalities.",
+    description: "I’m Sarim, a product manager and a technology enthusiast. I work at CERP Labs where we develop technologies that empower people to bolster economic issues and inequalities.",
     email: "sarimmehmood1@gmail.com",
     socialLinks: {
         linkedIn: "https://linkedin.com/in/sarimmehmood1",
